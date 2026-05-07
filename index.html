@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ACHKY FAMILY</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -19,7 +19,7 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Poppins',sans-serif;
-background:#0a0a0a;
+background:#0b1120;
 color:white;
 overflow-x:hidden;
 }
@@ -29,22 +29,21 @@ overflow-x:hidden;
 .navbar{
 position:fixed;
 top:0;
+left:0;
 width:100%;
-padding:20px 8%;
+padding:18px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.7);
+background:rgba(0,0,0,0.5);
 backdrop-filter:blur(12px);
 z-index:999;
-border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .logo{
 font-size:28px;
 font-weight:800;
-color:#f8d56b;
-letter-spacing:2px;
+color:#facc15;
 }
 
 .nav-links{
@@ -53,50 +52,50 @@ gap:25px;
 }
 
 .nav-links a{
-text-decoration:none;
 color:white;
+text-decoration:none;
 font-weight:500;
 transition:0.3s;
 }
 
 .nav-links a:hover{
-color:#f8d56b;
+color:#facc15;
 }
 
 /* HERO */
 
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1600&auto=format&fit=crop');
-background-size:cover;
-background-position:center;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:120px 20px;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
 }
 
 .hero-content{
 max-width:850px;
-animation:fadeIn 1.5s ease;
+animation:fadeUp 1.2s ease;
 }
 
 .hero h1{
 font-size:72px;
-font-weight:800;
+line-height:1.1;
 margin-bottom:20px;
-color:#fff;
+font-weight:800;
 }
 
-.hero span{
-color:#f8d56b;
+.hero h1 span{
+color:#facc15;
 }
 
 .hero p{
-font-size:22px;
+font-size:20px;
 line-height:1.8;
 color:#ddd;
 margin-bottom:35px;
@@ -110,20 +109,17 @@ flex-wrap:wrap;
 }
 
 .btn{
-padding:16px 34px;
-border:none;
+padding:16px 35px;
 border-radius:50px;
-font-size:16px;
-font-weight:600;
-cursor:pointer;
-transition:0.3s;
 text-decoration:none;
+font-weight:700;
+transition:0.3s;
 display:inline-block;
 }
 
 .btn-primary{
-background:#f8d56b;
-color:#111;
+background:#facc15;
+color:#000;
 }
 
 .btn-primary:hover{
@@ -132,196 +128,137 @@ background:white;
 }
 
 .btn-secondary{
-background:transparent;
-border:2px solid #f8d56b;
-color:#f8d56b;
+border:2px solid white;
+color:white;
 }
 
 .btn-secondary:hover{
-background:#f8d56b;
+background:white;
 color:black;
 }
 
 /* SECTION */
 
-section{
-padding:110px 8%;
+.section{
+padding:100px 8%;
 }
 
 .section-title{
+font-size:50px;
+margin-bottom:60px;
 text-align:center;
-font-size:48px;
-margin-bottom:70px;
 font-weight:800;
-color:#f8d56b;
+color:#facc15;
 }
 
 /* FAMILY CARDS */
 
 .family-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
-.card{
-background:#111;
+.family-card{
+background:#111827;
 padding:35px;
-border-radius:22px;
-text-align:center;
+border-radius:25px;
 transition:0.4s;
-border:1px solid rgba(255,255,255,0.08);
-box-shadow:0 10px 40px rgba(0,0,0,0.4);
+border:1px solid rgba(255,255,255,0.06);
 }
 
-.card:hover{
+.family-card:hover{
 transform:translateY(-10px);
-border-color:#f8d56b;
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
 }
 
-.card h3{
+.family-card h3{
 font-size:28px;
 margin-bottom:10px;
-color:#f8d56b;
+color:#facc15;
 }
 
-.card p{
-color:#bbb;
-line-height:1.7;
+.family-card p{
+color:#cbd5e1;
+line-height:1.8;
 }
 
-/* STORY */
+/* STORY SECTION */
 
 .story{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.story img{
-width:100%;
-border-radius:25px;
-}
-
-.story-text h2{
-font-size:50px;
-margin-bottom:25px;
-color:#f8d56b;
-}
-
-.story-text p{
-font-size:18px;
+background:#111827;
+border-radius:30px;
+padding:60px;
 line-height:2;
-color:#ccc;
-}
-
-/* GALLERY */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.gallery img{
-width:100%;
-height:280px;
-object-fit:cover;
-border-radius:22px;
-transition:0.4s;
-}
-
-.gallery img:hover{
-transform:scale(1.04);
-}
-
-/* PRODUCT */
-
-.product-box{
-background:#111;
-padding:50px;
-border-radius:25px;
-text-align:center;
-border:1px solid rgba(255,255,255,0.08);
-}
-
-.product-box img{
-width:100%;
-max-width:450px;
-border-radius:22px;
-margin-bottom:30px;
-}
-
-.product-box h2{
-font-size:40px;
-margin-bottom:20px;
-color:#f8d56b;
-}
-
-.product-box p{
 font-size:18px;
-line-height:1.8;
-color:#ccc;
-margin-bottom:30px;
+color:#d1d5db;
 }
 
-/* QUOTE */
+/* GROUP SECTION */
 
-.quote{
+.group-section{
+padding:100px 20px;
 text-align:center;
-font-size:38px;
-font-weight:700;
-line-height:1.7;
-max-width:900px;
+background:linear-gradient(135deg,#111827,#1e293b);
+}
+
+.group-box{
+max-width:750px;
 margin:auto;
-color:#f8d56b;
+padding:50px 30px;
+background:#0f172a;
+border-radius:30px;
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.group-box h2{
+font-size:45px;
+margin-bottom:25px;
+color:#25D366;
+}
+
+.group-box p{
+font-size:18px;
+line-height:1.9;
+color:#ddd;
+margin-bottom:35px;
+}
+
+.group-btn{
+background:#25D366;
+color:white;
+padding:18px 40px;
+border-radius:50px;
+font-size:20px;
+font-weight:700;
+text-decoration:none;
+display:inline-block;
+transition:0.3s;
+}
+
+.group-btn:hover{
+transform:scale(1.08);
+background:#1ebe5d;
 }
 
 /* FOOTER */
 
 footer{
-background:#050505;
-padding:60px 8%;
+padding:40px 20px;
 text-align:center;
-border-top:1px solid rgba(255,255,255,0.08);
+background:#020617;
+color:#94a3b8;
 }
 
-footer h2{
-font-size:36px;
+footer h3{
+font-size:30px;
 margin-bottom:15px;
-color:#f8d56b;
-}
-
-footer p{
-color:#aaa;
-margin-bottom:25px;
-}
-
-.socials{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.socials a{
-color:white;
-text-decoration:none;
-padding:12px 22px;
-border:1px solid rgba(255,255,255,0.1);
-border-radius:50px;
-transition:0.3s;
-}
-
-.socials a:hover{
-background:#f8d56b;
-color:black;
+color:#facc15;
 }
 
 /* ANIMATION */
 
-@keyframes fadeIn{
+@keyframes fadeUp{
 from{
 opacity:0;
 transform:translateY(40px);
@@ -334,78 +271,81 @@ transform:translateY(0);
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:768px){
 
-.hero h1{
-font-size:50px;
+.navbar{
+padding:15px 5%;
 }
 
-.hero p{
-font-size:18px;
-}
-
-.story{
-grid-template-columns:1fr;
-}
-
-.section-title{
-font-size:38px;
-}
-
-.story-text h2{
-font-size:38px;
-}
-
-.quote{
-font-size:28px;
+.logo{
+font-size:22px;
 }
 
 .nav-links{
-display:none;
+gap:15px;
+font-size:14px;
 }
-
-}
-
-@media(max-width:600px){
 
 .hero h1{
-font-size:38px;
+font-size:42px;
 }
 
 .hero p{
 font-size:16px;
 }
 
-.btn{
-width:100%;
+.section{
+padding:70px 5%;
 }
 
 .section-title{
-font-size:32px;
+font-size:34px;
 }
 
-.card h3{
-font-size:24px;
+.story{
+padding:35px 25px;
+font-size:16px;
+}
+
+.group-box{
+padding:35px 20px;
+}
+
+.group-box h2{
+font-size:30px;
+}
+
+.group-box p{
+font-size:16px;
+}
+
+.group-btn{
+width:100%;
+font-size:18px;
 }
 
 }
 
 </style>
 </head>
+
 <body>
 
 <!-- NAVBAR -->
 
-<div class="navbar">
-<div class="logo">ACHKY FAMILY</div>
+<nav class="navbar">
+
+<div class="logo">
+ACHKY FAMILY
+</div>
 
 <div class="nav-links">
 <a href="#family">Family</a>
 <a href="#story">Story</a>
-<a href="#gallery">Gallery</a>
-<a href="#product">Store</a>
+<a href="#group">Group</a>
 </div>
-</div>
+
+</nav>
 
 <!-- HERO -->
 
@@ -413,11 +353,12 @@ font-size:24px;
 
 <div class="hero-content">
 
-<h1>THE <span>ACHKY</span> LEGACY</h1>
+<h1>
+THE <span>ACHKY</span> FAMILY
+</h1>
 
 <p>
-A powerful family legacy built through generations,
-traditions, unity, and strength.
+A legendary family legacy built with love, traditions, unity and strong family bonds across generations.
 </p>
 
 <div class="hero-buttons">
@@ -426,9 +367,8 @@ traditions, unity, and strength.
 Explore Family
 </a>
 
-<a href="https://afrishopootza.storeep.com/products/protect-your-property-before-its-too-late"
-class="btn btn-secondary" target="_blank">
-Visit Store
+<a href="#group" class="btn btn-secondary">
+Join Group
 </a>
 
 </div>
@@ -439,52 +379,68 @@ Visit Store
 
 <!-- FAMILY -->
 
-<section id="family">
+<section class="section" id="family">
 
 <h2 class="section-title">
-The Family Members
+FAMILY MEMBERS
 </h2>
 
 <div class="family-grid">
 
-<div class="card">
-<h3>Arbi Achky</h3>
-<p>The grandfather and founder of the family legacy.</p>
+<div class="family-card">
+<h3>ARBI ACHKY</h3>
+<p>
+Grandfather of the Achky family and one of the strongest pillars of the family legacy.
+</p>
 </div>
 
-<div class="card">
-<h3>Khadoj Dri3i</h3>
-<p>The grandmother and the heart of the family.</p>
+<div class="family-card">
+<h3>KHADOUJ DRI3I</h3>
+<p>
+Grandmother of the family known for kindness, wisdom and strong family values.
+</p>
 </div>
 
-<div class="card">
-<h3>Hassan Achky</h3>
-<p>One of the strong sons carrying the family name.</p>
+<div class="family-card">
+<h3>HASSAN ACHKY</h3>
+<p>
+One of the sons of the family carrying the Achky name proudly.
+</p>
 </div>
 
-<div class="card">
-<h3>Arafi Achky</h3>
-<p>A respected member of the Achky generation.</p>
+<div class="family-card">
+<h3>ARAFI ACHKY</h3>
+<p>
+A respected member of the Achky family known for family unity.
+</p>
 </div>
 
-<div class="card">
-<h3>Jamal Achky</h3>
-<p>Representing strength, ambition, and family values.</p>
+<div class="family-card">
+<h3>JAMAL ACHKY</h3>
+<p>
+Part of the new generation continuing the family legacy.
+</p>
 </div>
 
-<div class="card">
-<h3>Nordine Achky</h3>
-<p>A proud son continuing the family legacy.</p>
+<div class="family-card">
+<h3>NORDINE ACHKY</h3>
+<p>
+One of the family sons contributing to the strength of the family bond.
+</p>
 </div>
 
-<div class="card">
-<h3>Rachida Achky</h3>
-<p>One of the respected daughters of the family.</p>
+<div class="family-card">
+<h3>RACHIDA ACHKY</h3>
+<p>
+A beloved daughter of the family with strong traditional values.
+</p>
 </div>
 
-<div class="card">
-<h3>Rabi3a Achky</h3>
-<p>Representing kindness, culture, and family traditions.</p>
+<div class="family-card">
+<h3>RABI3A ACHKY</h3>
+<p>
+A respected member of the Achky family known for kindness and unity.
+</p>
 </div>
 
 </div>
@@ -493,89 +449,56 @@ The Family Members
 
 <!-- STORY -->
 
-<section id="story">
+<section class="section" id="story">
+
+<h2 class="section-title">
+OUR STORY
+</h2>
 
 <div class="story">
 
-<img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1200&auto=format&fit=crop">
-
-<div class="story-text">
-
-<h2>Our Story</h2>
-
 <p>
-The Achky Family represents unity, traditions,
-culture, and generations of strength.
-Built on respect and family values,
-the legacy continues through every generation.
+The Achky Family represents unity, respect, love and tradition.
+Across generations, the family remained connected through strong values and unforgettable memories.
 </p>
 
+<br>
+
 <p>
-This website represents the story,
-the lifestyle, and the future of the family.
+From grandparents to children, every member carries an important role in preserving the family legacy and strengthening relationships between all generations.
 </p>
 
-</div>
+<br>
+
+<p>
+This website was created as a modern digital home for the Achky Family where memories, communication and family identity stay connected forever.
+</p>
 
 </div>
 
 </section>
 
-<!-- GALLERY -->
+<!-- WHATSAPP GROUP -->
 
-<section id="gallery">
+<section class="group-section" id="group">
 
-<h2 class="section-title">
-Family Lifestyle
+<div class="group-box">
+
+<h2>
+JOIN OUR FAMILY GROUP
 </h2>
 
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?q=80&w=1200&auto=format&fit=crop">
-
-<img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop">
-
-<img src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?q=80&w=1200&auto=format&fit=crop">
-
-<img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1200&auto=format&fit=crop">
-
-</div>
-
-</section>
-
-<!-- QUOTE -->
-
-<section>
-
-<div class="quote">
-
-“Strong families create powerful futures.”
-
-</div>
-
-</section>
-
-<!-- PRODUCT -->
-
-<section id="product">
-
-<div class="product-box">
-
-<img src="https://images.unsplash.com/photo-1519583272095-6433daf26b6e?q=80&w=1200&auto=format&fit=crop">
-
-<h2>Featured Product</h2>
-
 <p>
-Discover our premium product collection and explore
-high-quality solutions designed for modern lifestyles.
+Stay connected with the Achky Family community through our official WhatsApp family group.
+Share memories, updates, family events and stay united together.
 </p>
 
-<a href="https://afrishopootza.storeep.com/products/protect-your-property-before-its-too-late"
-class="btn btn-primary"
-target="_blank">
-
-Shop Now
-
+<a
+href="https://chat.whatsapp.com/LAqv4eze1ig4qJh9a0e6cC?mode=gi_t"
+target="_blank"
+class="group-btn"
+>
+Join WhatsApp Group
 </a>
 
 </div>
@@ -586,19 +509,13 @@ Shop Now
 
 <footer>
 
-<h2>ACHKY FAMILY</h2>
+<h3>
+ACHKY FAMILY
+</h3>
 
 <p>
-Legacy • Culture • Unity
+Legacy • Unity • Family • Tradition
 </p>
-
-<div class="socials">
-
-<a href="#">Instagram</a>
-<a href="#">TikTok</a>
-<a href="#">Facebook</a>
-
-</div>
 
 </footer>
 
