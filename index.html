@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ACHKY FAMILY ❤️</title>
+<title>عائلة elastic العشقي</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,8 +19,8 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#050505;
+font-family:'Cairo',sans-serif;
+background:#0b0b0b;
 color:white;
 overflow-x:hidden;
 }
@@ -28,34 +29,33 @@ overflow-x:hidden;
 
 .hero{
 height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),
-url('photo1.jpg');
-background-size:cover;
-background-position:center;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.8)),
+linear-gradient(135deg,#111,#1d1d1d);
 }
 
 .hero-content h1{
-font-size:75px;
+font-size:85px;
 font-weight:800;
 margin-bottom:20px;
+color:#fff;
 }
 
 .hero-content span{
-color:#ff004c;
+color:#d4af37;
 }
 
 .hero-content p{
-font-size:22px;
-max-width:800px;
+font-size:24px;
+max-width:750px;
 margin:auto;
-line-height:1.8;
-opacity:.9;
+line-height:2;
+color:#ddd;
 }
 
 .btn{
@@ -63,17 +63,16 @@ display:inline-block;
 margin-top:35px;
 padding:18px 45px;
 border-radius:60px;
-background:#ff004c;
-color:white;
+background:#d4af37;
+color:black;
 text-decoration:none;
-font-weight:700;
+font-weight:800;
 transition:.4s;
 }
 
 .btn:hover{
-transform:scale(1.1);
+transform:scale(1.08);
 background:white;
-color:black;
 }
 
 /* SECTION */
@@ -87,51 +86,65 @@ text-align:center;
 font-size:55px;
 margin-bottom:70px;
 font-weight:800;
+color:#d4af37;
 }
 
-/* FAMILY GRID */
+/* FAMILY */
 
 .family-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:35px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
-/* CARD */
-
 .card{
-background:#111;
+background:#151515;
+padding:35px;
 border-radius:25px;
-overflow:hidden;
-transition:.5s;
-box-shadow:0 0 25px rgba(0,0,0,.5);
+text-align:center;
+transition:.4s;
+border:1px solid rgba(255,255,255,.06);
+box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
 
 .card:hover{
 transform:translateY(-10px);
+border-color:#d4af37;
 }
 
-.card img{
-width:100%;
-height:350px;
-object-fit:cover;
-}
-
-.card-content{
-padding:25px;
-text-align:center;
-}
-
-.card-content h2{
-font-size:28px;
-margin-bottom:12px;
+.card h2{
+font-size:30px;
+margin-bottom:15px;
 color:#fff;
 }
 
-.card-content p{
-opacity:.8;
-line-height:1.8;
-font-size:15px;
+.card p{
+color:#bbb;
+line-height:1.9;
+font-size:16px;
+}
+
+/* GRANDPARENTS */
+
+.parents{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-bottom:70px;
+}
+
+.parent-card{
+background:linear-gradient(135deg,#d4af37,#b8860b);
+padding:40px;
+border-radius:30px;
+text-align:center;
+color:black;
+box-shadow:0 10px 35px rgba(212,175,55,.4);
+}
+
+.parent-card h2{
+font-size:38px;
+margin-bottom:15px;
 }
 
 /* WHATSAPP */
@@ -139,18 +152,19 @@ font-size:15px;
 .whatsapp{
 padding:100px 20px;
 text-align:center;
-background:#0d0d0d;
+background:#111;
 }
 
 .whatsapp h1{
-font-size:55px;
+font-size:50px;
 margin-bottom:20px;
+color:#25D366;
 }
 
 .whatsapp p{
-opacity:.8;
-margin-bottom:35px;
 font-size:18px;
+color:#ccc;
+margin-bottom:35px;
 }
 
 .whatsapp a{
@@ -162,230 +176,4 @@ font-size:20px;
 font-weight:700;
 border-radius:60px;
 text-decoration:none;
-transition:.4s;
-}
-
-.whatsapp a:hover{
-transform:scale(1.1);
-}
-
-/* FOOTER */
-
-footer{
-padding:35px;
-text-align:center;
-background:black;
-opacity:.7;
-font-size:15px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero-content h1{
-font-size:45px;
-}
-
-.hero-content p{
-font-size:17px;
-}
-
-.title{
-font-size:38px;
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>ACHKY <span>FAMILY ❤️</span></h1>
-
-<p>
-A beautiful family full of love, respect, memories and happiness ✨
-</p>
-
-<a href="#family" class="btn">Discover Family</a>
-
-</div>
-
-</section>
-
-<!-- FAMILY -->
-
-<section class="section" id="family">
-
-<h1 class="title">Our Beautiful Family 👨‍👩‍👦</h1>
-
-<div class="family-grid">
-
-<!-- GRANDPARENTS -->
-
-<div class="card">
-<img src="photo2.jpg">
-<div class="card-content">
-<h2>Arbi Achky 👑</h2>
-<p>
-The grandfather of the family ❤️  
-A symbol of wisdom, respect and strength.
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo3.jpg">
-<div class="card-content">
-<h2>Aicha Hadioui ❤️</h2>
-<p>
-A beautiful grandmother full of kindness and unforgettable memories ✨
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo4.jpg">
-<div class="card-content">
-<h2>Khadoj Driy ❤️</h2>
-<p>
-A beautiful soul in the family with a pure heart ✨
-</p>
-</div>
-</div>
-
-<!-- BROTHERS -->
-
-<div class="card">
-<img src="photo5.jpg">
-<div class="card-content">
-<h2>1️⃣ Mohamed Achky</h2>
-<p>
-The big brother ❤️  
-Strong, respected and always supportive.
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo6.jpg">
-<div class="card-content">
-<h2>2️⃣ Abdelaziz Achky</h2>
-<p>
-A man full of kindness and positive energy ✨
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo7.jpg">
-<div class="card-content">
-<h2>3️⃣ Bochta Achky</h2>
-<p>
-Full of wisdom and unforgettable memories ❤️
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo8.jpg">
-<div class="card-content">
-<h2>4️⃣ Hassan Achky</h2>
-<p>
-Always bringing happiness and beautiful vibes ✨
-</p>
-</div>
-</div>
-
-<!-- FAMILY -->
-
-<div class="card">
-<img src="photo9.jpg">
-<div class="card-content">
-<h2>Arafi Achky</h2>
-<p>
-Part of the beautiful ACHKY family ❤️
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo1.jpg">
-<div class="card-content">
-<h2>Jamal Achky</h2>
-<p>
-A soul full of positivity and happiness ✨
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo2.jpg">
-<div class="card-content">
-<h2>Nordin Achky</h2>
-<p>
-A respected member of the family ❤️
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo3.jpg">
-<div class="card-content">
-<h2>Rabiaa Achky</h2>
-<p>
-A beautiful person with a kind heart ✨
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="photo4.jpg">
-<div class="card-content">
-<h2>Rachida Achky</h2>
-<p>
-Part of the love and beauty of the family ❤️
-</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- WHATSAPP -->
-
-<section class="whatsapp">
-
-<h1>Join Our WhatsApp Group 💬</h1>
-
-<p>
-Stay connected with the ACHKY FAMILY ❤️
-</p>
-
-<a href="https://chat.whatsapp.com/LAqv4eze1ig4qJh9a0e6cC?mode=gi_t" target="_blank">
-
-Join WhatsApp
-
-</a>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-Made with ❤️ by ACHKY FAMILY
-
-</footer>
-
-</body>
-</html>
+transition:.4s
