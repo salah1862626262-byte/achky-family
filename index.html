@@ -44,7 +44,6 @@ linear-gradient(135deg,#111,#1d1d1d);
 font-size:90px;
 font-weight:800;
 margin-bottom:20px;
-color:white;
 }
 
 .hero-content span{
@@ -95,7 +94,7 @@ color:#d4af37;
 
 .family-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:35px;
 }
 
@@ -132,13 +131,47 @@ border-color:#d4af37;
 font-size:32px;
 margin-bottom:18px;
 font-weight:800;
-color:white;
+cursor:pointer;
 }
 
 .card p{
 font-size:17px;
 line-height:2;
 color:#bbb;
+}
+
+/* FAMILY DETAILS */
+
+.family-details{
+max-height:0;
+overflow:hidden;
+transition:.6s;
+margin-top:20px;
+text-align:right;
+}
+
+.family-details.active{
+max-height:700px;
+}
+
+.family-details h3{
+margin-top:20px;
+margin-bottom:12px;
+color:#d4af37;
+font-size:22px;
+}
+
+.family-details ul{
+list-style:none;
+padding:0;
+}
+
+.family-details li{
+background:#1d1d1d;
+padding:14px 18px;
+border-radius:14px;
+margin-bottom:10px;
+color:#ddd;
 }
 
 /* WHATSAPP */
@@ -243,101 +276,104 @@ font-size:25px;
 <section class="section" id="family">
 
 <h1 class="title">
-أفراد العائلة 👨‍👩‍👧‍👦
+شجرة العائلة 👨‍👩‍👧‍👦
 </h1>
 
 <div class="family-grid">
 
-<div class="card">
-<h2>العربي العشقي 👑</h2>
-<p>
-الجد الكبير للعائلة ❤️<br>
-رمز الحكمة والقوة والإحترام.
-</p>
-</div>
+<!-- HASSAN -->
 
 <div class="card">
-<h2>عائشة حديوي ❤️</h2>
+
+<h2 onclick="toggleFamily('hassan')">
+حسن العشقي 👨‍👩‍👧‍👦
+</h2>
+
 <p>
-جدة طيبة مليئة بالحنان والمحبة ✨
+إضغط لرؤية أفراد العائلة ❤️
 </p>
+
+<div id="hassan" class="family-details">
+
+<h3>الزوجة ❤️</h3>
+
+<ul>
+<li>رشيدة مسياه</li>
+</ul>
+
+<h3>الأبناء 👦</h3>
+
+<ul>
+<li>صلاح الدين العشقي</li>
+<li>أمين العشقي</li>
+<li>ياسين العشقي</li>
+</ul>
+
+<h3>البنات 👧</h3>
+
+<ul>
+<li>سورايا العشقي</li>
+<li>فردوس العشقي</li>
+</ul>
+
 </div>
 
-<div class="card">
-<h2>خدوج الدريعي ❤️</h2>
-<p>
-روح جميلة داخل العائلة وقلب نقي ✨
-</p>
 </div>
 
-<div class="card">
-<h2>محمد العشقي</h2>
-<p>
-الإبن الأكبر في العائلة ❤️
-</p>
-</div>
+<!-- MOHAMED -->
 
 <div class="card">
-<h2>أحمد العشقي</h2>
+
+<h2>
+محمد العشقي
+</h2>
+
 <p>
-شخصية محترمة ومحبوبة داخل العائلة ❤️
+أحد أفراد العائلة الكبار ❤️
 </p>
+
 </div>
 
-<div class="card">
-<h2>عبد العزيز العشقي</h2>
-<p>
-شخصية محترمة وهادئة ✨
-</p>
-</div>
+<!-- AHMED -->
 
 <div class="card">
-<h2>بوشتى العشقي</h2>
+
+<h2>
+أحمد العشقي
+</h2>
+
 <p>
-رجل معروف بالأخلاق والطيبة ❤️
+شخصية محترمة ومحبوبة داخل العائلة ✨
 </p>
+
 </div>
 
-<div class="card">
-<h2>حسن العشقي</h2>
-<p>
-شخص محبوب داخل العائلة ✨
-</p>
-</div>
+<!-- ABDELAZIZ -->
 
 <div class="card">
-<h2>العرفي العشقي</h2>
+
+<h2>
+عبد العزيز العشقي
+</h2>
+
 <p>
-شخصية قوية ومحترمة ❤️
+شخصية هادئة ومحترمة ❤️
 </p>
+
 </div>
 
-<div class="card">
-<h2>جمال العشقي</h2>
-<p>
-إنسان طيب ومرح ✨
-</p>
-</div>
+<!-- BOCHTA -->
 
 <div class="card">
-<h2>نور الدين العشقي</h2>
-<p>
-شخص محبوب وهادئ ❤️
-</p>
-</div>
 
-<div class="card">
-<h2>ربيعة العشقي</h2>
-<p>
-امرأة محترمة وطيبة ✨
-</p>
-</div>
+<h2>
+بوشتى العشقي
+</h2>
 
-<div class="card">
-<h2>رشيدة العشقي</h2>
 <p>
-إنسانة جميلة القلب والأخلاق ❤️
+رجل معروف بالأخلاق والطيبة ✨
 </p>
+
 </div>
 
 </div>
@@ -357,7 +393,9 @@ font-size:25px;
 </p>
 
 <a href="https://chat.whatsapp.com/LAqv4eze1ig4qJh9a0e6cC?mode=gi_t" target="_blank">
+
 الدخول إلى المجموعة
+
 </a>
 
 </section>
@@ -368,12 +406,28 @@ font-size:25px;
 
 © 2026 عائلة العشقي - جميع الحقوق محفوظة ❤️
 
+<br><br>
+
+تم تصميم الموقع بواسطة
+<b style="color:#d4af37;">
+صلاح الدين العشقي
+</b>
+
 </footer>
+
+<!-- SCRIPT -->
+
+<script>
+
+function toggleFamily(id){
+
+document
+.getElementById(id)
+.classList.toggle("active");
+
+}
+
+</script>
 
 </body>
 </html>
-تم تصميم هذا الموقع بواسطة <span style="color:#d4af37;font-weight:700;">
-صلاح الدين العشقي
-</span>
-
-</footer>
